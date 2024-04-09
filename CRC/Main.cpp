@@ -6,7 +6,6 @@ int main() {
     AuthenticationSystem system;
 
     // Zapisujemy u¿ytkowników do pliku
-    system.saveToFile("users.txt");
 
     // Odczytujemy u¿ytkowników z pliku
     system.loadFromFile("users.txt");
@@ -62,10 +61,8 @@ int main() {
         break;
     }
 
-    // Usuwanie u¿ytkowników i zakoñczenie programu
-    for (User* user : system.users) {
-        delete user;
-    }
+    
+    system.saveToFile("users.txt");
     system.users.clear();
 
     return 0;

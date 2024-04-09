@@ -1,5 +1,8 @@
 #include "User.h"
 #include <vector>
+#include <fstream>
+#include <sstream>
+#include <iostream>
 
 class AuthenticationSystem {
 private:

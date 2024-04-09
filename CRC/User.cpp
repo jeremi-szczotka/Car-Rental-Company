@@ -26,10 +26,3 @@ User* User::loadFromFile(std::istream& is) {
     }
     return nullptr;
 }
-User* User::loadFromFile(std::istream& is) {
-    std::string username, password;
-    if (is >> username >> password) {
-        return new User(username, password);
-    }
-    return nullptr;
-}
