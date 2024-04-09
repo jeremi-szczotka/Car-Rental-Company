@@ -1,5 +1,5 @@
-﻿  AuthenticationSystem.cpp
-  Main.cpp
+﻿  Main.cpp
+  User.cpp
 C:\Users\jeren\Desktop\studia\CRC\User.h(3,12): error C2011: "User'': "class" wpisz ponownie definicję
   (kompilowanie pliku źródłowego „Main.cpp”)
   C:\Users\jeren\Desktop\studia\CRC\User.h(3,7):
@@ -30,7 +30,6 @@ C:\Users\jeren\Desktop\studia\CRC\Main.cpp(67,9): warning C4150: usunięcie wska
   C:\Users\jeren\Desktop\studia\CRC\User.h(3,7):
   zobacz deklarację „User”
   
-  User.cpp
 C:\Users\jeren\Desktop\studia\CRC\User.cpp(29,13): error C2084: funkcja "User *User::loadFromFile(std::istream &)" ma już treść
   C:\Users\jeren\Desktop\studia\CRC\User.cpp(22,13):
   zobacz poprzednią definicję „loadFromFile”
