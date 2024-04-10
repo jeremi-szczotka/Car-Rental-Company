@@ -15,9 +15,9 @@ AdminUser::AdminUser(const std::string& _username, const std::string& _password)
 bool AdminUser::authenticate(const std::string& _username, const std::string& _password) const {
     return true;
 }
-void User::saveToFile(std::ostream& os) const {
-    os << username << " " << password << std::endl;
-}
+//void User::saveToFile(std::ostream& os) const {
+//    os << username << " " << password << std::endl;
+//}
 
 User* User::loadFromFile(std::istream& is) {
     std::string username, password;

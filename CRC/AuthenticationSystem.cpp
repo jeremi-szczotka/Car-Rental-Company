@@ -1,10 +1,6 @@
 #include "AuthenticationSystem.h"
 
 
-void AuthenticationSystem::addUser(User* user) {
-    users.push_back(user);
-}
-
 User* AuthenticationSystem::login(const std::string& username, const std::string& password) {
     for (User* user : users) {
         if (user->authenticate(username, password)) {
@@ -13,26 +9,6 @@ User* AuthenticationSystem::login(const std::string& username, const std::string
     }
     return nullptr;
 }
-
-void AuthenticationSystem::saveToFile(const std::string& filename) const {
-    std::ofstream file(filename);
-    if (file.is_open()) {
-        for (User* user : users) {
-            if (dynamic_cast<AdminUser*>(user) != nullptr) {
-                file << "admin ";
-            }
-            else {
-                file << "user ";
-            }
-            user->saveToFile(file);
-        }
-        file.close();
-    }
-    else {
-        std::cerr << "Unable to open file for writing: " << filename << std::endl;
-    }
-}
-
 
 void AuthenticationSystem::loadFromFile(const std::string& filename) {
     std::ifstream file(filename);
