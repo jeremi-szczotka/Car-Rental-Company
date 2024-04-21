@@ -13,6 +13,31 @@ void Menu::loginAsAdmin() {
     if (loggedInAdmin != nullptr && dynamic_cast<AdminUser*>(loggedInAdmin) != nullptr) {
         std::cout << "Logged in as admin: " << loggedInAdmin->getUsername() << std::endl;
         // Tutaj mo¿esz dodaæ logikê dla interfejsu admina
+        std::cout << "-------------------------------" << std::endl;
+        std::cout << "Choose your option:" << std::endl;
+        std::cout << "1. Rent a car." << std::endl;
+        std::cout << "2. Car list." << std::endl;
+        std::cout << "3. Quit" << std::endl;
+        std::cout << "--------------------------------" << std::endl;
+        int c;
+        bool x = true;
+        while (x) {
+            switch (c) {
+            case 1:
+                
+                break;
+            case 2:
+                
+                break;
+            case 3:
+                std::cout << "Vamos" << std::endl;
+                x = false;
+                break;
+            default:
+                std::cout << "Invalid choice!" << std::endl;
+                break;
+            }
+        }
     }
     else {
         std::cout << "Login failed. Invalid credentials or not an admin." << std::endl;

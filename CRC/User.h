@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <iostream>
+
 class User {
 protected:
     std::string username;

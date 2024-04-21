@@ -128,12 +128,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AuthenticationSystem.cpp" />
+    <ClCompile Include="Car.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="User.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AuthenticationSystem.h" />
+    <ClInclude Include="Car.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="User.h" />
   </ItemGroup>
