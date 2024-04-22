@@ -13,8 +13,9 @@ public:
     std::string model;
     int productionYear;
     std::vector<Car> cars;
+    bool isRented;
 
-    Car(std::string pr = "Unknown", int m = 0, int p = 0, std::string mo = "Unknown", int pY = 0);
+    Car(std::string pr = "Unknown", std::string mo = "Unknown", int p = 0, int m = 0, int pY = 0,bool iR=0);
 
     void loadFromFile(const std::string& filename);
 

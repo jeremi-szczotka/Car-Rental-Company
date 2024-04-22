@@ -1,6 +1,6 @@
 #include "Car.h"
 
-Car::Car(std::string pr, int m, int p, std::string mo, int pY) : producent(pr), milage(m), hp(p), model(mo), productionYear(pY) {}
+Car::Car(std::string pr, std::string mo, int p, int m, int pY,bool iR) : producent(pr), model(mo), hp(p), milage(m), productionYear(pY), isRented(iR) {}
 
 void Car::loadFromFile(const std::string& filename) {
     std::ifstream file(filename);
@@ -8,8 +8,8 @@ void Car::loadFromFile(const std::string& filename) {
         std::string line;
         while (std::getline(file, line)) {
             std::istringstream iss(line);
-            if (iss >> producent >> milage >> hp >> model >> productionYear) {
-                cars.push_back(Car(producent, milage, hp, model, productionYear));
+            if (iss >> producent >> model >> hp >> milage >> productionYear >> isRented) {
+                cars.push_back(Car(producent, model, hp, milage, productionYear, isRented));
             }
         }
         file.close();
@@ -21,6 +21,12 @@ void Car::loadFromFile(const std::string& filename) {
 
 void Car::displayCars() {
     for (const auto& car : cars) {
-        std::cout << "Producent: " << car.producent << ", Milage: " << car.milage << ", HP: " << car.hp << ", Model: " << car.model << ", Production Year: " << car.productionYear << std::endl;
+        std::cout << "Producent: " << car.producent << ", Model: " << car.model << ", HP: " << car.hp << ", Milage: " << car.milage << ", Production Year: " << car.productionYear;
+        if (car.isRented) {
+            std::cout << " Car is rented" << std::endl;
+        }
+        else{
+            std::cout << " Car is available" << std::endl;
+        }
     }
 }
