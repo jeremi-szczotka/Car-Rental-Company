@@ -12,6 +12,39 @@ void Menu::loginAsAdmin() {
     User* loggedInAdmin = system.login(adminUsername, adminPassword);
     if (loggedInAdmin != nullptr && dynamic_cast<AdminUser*>(loggedInAdmin) != nullptr) {
         std::cout << "Logged in as admin: " << loggedInAdmin->getUsername() << std::endl;
+        Car c1;
+        c1.loadFromFile("cars.txt");
+
+        int c = 0;
+        bool x = true;
+        while (x) {
+            switch (c) {
+            case 0:
+                std::cout << "-------------------------------" << std::endl;
+                std::cout << "Choose your option:" << std::endl;
+                std::cout << "1. Car list." << std::endl;
+                std::cout << "2. Add a car." << std::endl;
+                std::cout << "3. Delete a user." << std::endl;
+                std::cout << "4. Quit" << std::endl;
+                std::cout << "--------------------------------" << std::endl;
+                std::cin >> c;
+                break;
+            case 1:
+                c1.displayCars();
+                c = 0;
+                break;
+            case 2:
+
+                break;
+            case 3:
+                std::cout << "Vamos" << std::endl;
+                x = false;
+                break;
+            default:
+                std::cout << "Invalid choice!" << std::endl;
+                break;
+            }
+        }
     }
     else {
         std::cout << "Login failed. Invalid credentials or not an admin." << std::endl;
@@ -29,10 +62,9 @@ void Menu::loginAsUser() {
     User* loggedInUser = system.login(userUsername, userPassword);
     if (loggedInUser != nullptr && dynamic_cast<AdminUser*>(loggedInUser) == nullptr) {
         std::cout << "Logged in as user: " << loggedInUser->getUsername() << std::endl;
-        // Tutaj mo¿esz dodaæ logikê dla interfejsu u¿ytkownika
+       
         Car c1;
         c1.loadFromFile("cars.txt");
-        // Tutaj mo¿esz dodaæ logikê dla interfejsu admina
         
         int c=0;
         bool x = true;
