@@ -24,8 +24,7 @@ void Menu::loginAsAdmin() {
                 std::cout << "Choose your option:" << std::endl;
                 std::cout << "1. Car list." << std::endl;
                 std::cout << "2. Add a car." << std::endl;
-                std::cout << "3. Delete a user." << std::endl;
-                std::cout << "4. Quit" << std::endl;
+                std::cout << "3. Quit" << std::endl;
                 std::cout << "--------------------------------" << std::endl;
                 std::cin >> c;
                 break;
@@ -34,7 +33,8 @@ void Menu::loginAsAdmin() {
                 c = 0;
                 break;
             case 2:
-
+                c1.addCar("cars.txt");
+                c = 0;
                 break;
             case 3:
                 std::cout << "Vamos" << std::endl;
@@ -42,6 +42,7 @@ void Menu::loginAsAdmin() {
                 break;
             default:
                 std::cout << "Invalid choice!" << std::endl;
+                x = false;
                 break;
             }
         }

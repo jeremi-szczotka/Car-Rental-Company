@@ -18,7 +18,7 @@ public:
     Car(std::string pr = "Unknown", std::string mo = "Unknown", int p = 0, int m = 0, int pY = 0,bool iR=0);
 
     void loadFromFile(const std::string& filename);
-
+    void addCar(const std::string& filename);
     void displayCars();
 };
 

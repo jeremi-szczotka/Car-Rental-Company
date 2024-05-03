@@ -30,3 +30,30 @@ void Car::displayCars() {
         }
     }
 }
+
+void Car::addCar(const std::string& filename) {
+    std::string pr, mo;
+    int p, m, pY;
+    bool iR = false;
+
+    std::cout << "Provide producent of a car: ";
+    std::cin >> pr;
+    std::cout << "Provide model of a car: ";
+    std::cin >> mo;
+    std::cout << "Provide horsepower (hp): ";
+    std::cin >> p;
+    std::cout << "Provide milage of a care (km): ";
+    std::cin >> m;
+    std::cout << "Provide year of production ";
+    std::cin >> pY;
+
+    std::ofstream file(filename, std::ios::app);
+    if (file.is_open()) {
+        file << pr << " " << mo << " " << p << " " << m << " " << pY << " " << iR << std::endl;
+        file.close();
+    }
+    else {
+        std::cerr << "Unable to open file: " << filename << std::endl;
+    }
+}
+
