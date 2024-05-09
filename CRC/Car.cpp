@@ -50,10 +50,12 @@ void Car::addCar(const std::string& filename) {
     std::ofstream file(filename, std::ios::app);
     if (file.is_open()) {
         file << pr << " " << mo << " " << p << " " << m << " " << pY << " " << iR << std::endl;
+        cars.emplace_back(pr, mo, p, m,pY, true);
         file.close();
     }
     else {
         std::cerr << "Unable to open file: " << filename << std::endl;
     }
+
 }
 

@@ -3,11 +3,11 @@
 
 void Menu::loginAsAdmin() {
     std::string adminUsername, adminPassword;
+    system.loadFromFile("users.txt");
     std::cout << "Enter admin username: ";
     std::cin >> adminUsername;
     std::cout << "Enter admin password: ";
     std::cin >> adminPassword;
-    system.loadFromFile("users.txt");
 
     User* loggedInAdmin = system.login(adminUsername, adminPassword);
     if (loggedInAdmin != nullptr && dynamic_cast<AdminUser*>(loggedInAdmin) != nullptr) {

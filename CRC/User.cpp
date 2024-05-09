@@ -13,7 +13,7 @@ std::string User::getUsername() const {
 AdminUser::AdminUser(const std::string& _username, const std::string& _password) : User(_username, _password) {}
 
 bool AdminUser::authenticate(const std::string& _username, const std::string& _password) const {
-    return true;
+    return username == _username && password == _password;
 }
 //void User::saveToFile(std::ostream& os) const {
 //    os << username << " " << password << std::endl;

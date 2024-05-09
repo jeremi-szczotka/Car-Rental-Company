@@ -11,7 +11,6 @@ private:
 
 public:
     std::vector<User*> users;
-    void addUser(User* user);
     User* login(const std::string& username, const std::string& password);
     void loadFromFile(const std::string& filename);
 };

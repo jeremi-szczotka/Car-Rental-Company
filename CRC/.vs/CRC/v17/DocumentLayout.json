@@ -19,14 +19,6 @@
       "RelativeMoniker": "D:0:0:{C4085557-021D-45FA-89BB-BFEDEBB3D77B}|CRC.vcxproj|solutionrelative:User.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C4085557-021D-45FA-89BB-BFEDEBB3D77B}|CRC.vcxproj|C:\\Users\\jeren\\Desktop\\studia\\CRC\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C4085557-021D-45FA-89BB-BFEDEBB3D77B}|CRC.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C4085557-021D-45FA-89BB-BFEDEBB3D77B}|CRC.vcxproj|C:\\Users\\jeren\\Desktop\\studia\\CRC\\Menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C4085557-021D-45FA-89BB-BFEDEBB3D77B}|CRC.vcxproj|solutionrelative:Menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C4085557-021D-45FA-89BB-BFEDEBB3D77B}|CRC.vcxproj|C:\\Users\\jeren\\Desktop\\studia\\CRC\\AuthenticationSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C4085557-021D-45FA-89BB-BFEDEBB3D77B}|CRC.vcxproj|solutionrelative:AuthenticationSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -37,6 +29,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{C4085557-021D-45FA-89BB-BFEDEBB3D77B}|CRC.vcxproj|C:\\Users\\jeren\\Desktop\\studia\\CRC\\User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C4085557-021D-45FA-89BB-BFEDEBB3D77B}|CRC.vcxproj|solutionrelative:User.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4085557-021D-45FA-89BB-BFEDEBB3D77B}|CRC.vcxproj|C:\\Users\\jeren\\Desktop\\studia\\CRC\\Menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C4085557-021D-45FA-89BB-BFEDEBB3D77B}|CRC.vcxproj|solutionrelative:Menu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4085557-021D-45FA-89BB-BFEDEBB3D77B}|CRC.vcxproj|C:\\Users\\jeren\\Desktop\\studia\\CRC\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C4085557-021D-45FA-89BB-BFEDEBB3D77B}|CRC.vcxproj|solutionrelative:Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -56,7 +56,7 @@
               "RelativeDocumentMoniker": "Car.cpp",
               "ToolTip": "C:\\Users\\jeren\\Desktop\\studia\\CRC\\Car.cpp",
               "RelativeToolTip": "Car.cpp",
-              "ViewState": "AQIAACYAAAAAAAAAAAAAADcAAABGAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAA8AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-16T10:16:19.847Z",
               "IsPinned": true,
@@ -64,7 +64,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Menu.h",
               "DocumentMoniker": "C:\\Users\\jeren\\Desktop\\studia\\CRC\\Menu.h",
               "RelativeDocumentMoniker": "Menu.h",
@@ -76,16 +76,8 @@
               "IsPinned": true
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AuthenticationSystem.h",
-              "DocumentMoniker": "C:\\Users\\jeren\\Desktop\\studia\\CRC\\AuthenticationSystem.h",
-              "RelativeDocumentMoniker": "AuthenticationSystem.h",
-              "ToolTip": "C:\\Users\\jeren\\Desktop\\studia\\CRC\\AuthenticationSystem.h",
-              "RelativeToolTip": "AuthenticationSystem.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-21T19:10:32.555Z"
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
@@ -95,9 +87,10 @@
               "RelativeDocumentMoniker": "User.cpp",
               "ToolTip": "C:\\Users\\jeren\\Desktop\\studia\\CRC\\User.cpp",
               "RelativeToolTip": "User.cpp",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAACAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-09T14:48:35.599Z"
+              "WhenOpened": "2024-04-09T14:48:35.599Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -107,33 +100,22 @@
               "RelativeDocumentMoniker": "Menu.cpp",
               "ToolTip": "C:\\Users\\jeren\\Desktop\\studia\\CRC\\Menu.cpp",
               "RelativeToolTip": "Menu.cpp",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAACQAAAAWAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-10T19:07:46.934Z"
+              "WhenOpened": "2024-04-10T19:07:46.934Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "AuthenticationSystem.cpp",
               "DocumentMoniker": "C:\\Users\\jeren\\Desktop\\studia\\CRC\\AuthenticationSystem.cpp",
               "RelativeDocumentMoniker": "AuthenticationSystem.cpp",
               "ToolTip": "C:\\Users\\jeren\\Desktop\\studia\\CRC\\AuthenticationSystem.cpp",
               "RelativeToolTip": "AuthenticationSystem.cpp",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAACkAAAAAAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-09T15:29:11.789Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Main.cpp",
-              "DocumentMoniker": "C:\\Users\\jeren\\Desktop\\studia\\CRC\\Main.cpp",
-              "RelativeDocumentMoniker": "Main.cpp",
-              "ToolTip": "C:\\Users\\jeren\\Desktop\\studia\\CRC\\Main.cpp",
-              "RelativeToolTip": "Main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-04-09T14:48:35.635Z"
             },
             {
               "$type": "Document",
@@ -143,21 +125,46 @@
               "RelativeDocumentMoniker": "Car.h",
               "ToolTip": "C:\\Users\\jeren\\Desktop\\studia\\CRC\\Car.h",
               "RelativeToolTip": "Car.h",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAAAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-16T10:07:59.689Z"
+              "WhenOpened": "2024-04-16T10:07:59.689Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "User.h",
               "DocumentMoniker": "C:\\Users\\jeren\\Desktop\\studia\\CRC\\User.h",
               "RelativeDocumentMoniker": "User.h",
               "ToolTip": "C:\\Users\\jeren\\Desktop\\studia\\CRC\\User.h",
               "RelativeToolTip": "User.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-04-09T14:48:35.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthenticationSystem.h",
+              "DocumentMoniker": "C:\\Users\\jeren\\Desktop\\studia\\CRC\\AuthenticationSystem.h",
+              "RelativeDocumentMoniker": "AuthenticationSystem.h",
+              "ToolTip": "C:\\Users\\jeren\\Desktop\\studia\\CRC\\AuthenticationSystem.h",
+              "RelativeToolTip": "AuthenticationSystem.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-21T19:10:32.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Main.cpp",
+              "DocumentMoniker": "C:\\Users\\jeren\\Desktop\\studia\\CRC\\Main.cpp",
+              "RelativeDocumentMoniker": "Main.cpp",
+              "ToolTip": "C:\\Users\\jeren\\Desktop\\studia\\CRC\\Main.cpp",
+              "RelativeToolTip": "Main.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-09T14:48:35.635Z"
             }
           ]
         }
