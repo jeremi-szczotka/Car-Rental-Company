@@ -1,5 +1,4 @@
 Ford Fiesta 100 250000 2009 0
-Opel Corsa 60 242000 2006 0
 Skoda Citygo 50 200000 2014 0
 Fiat Grande_Punto 77 232000 2009 0
 Volkswagen Passat 180 108000 2023 0
@@ -10,6 +9,3 @@ BMW E36 200 25000 2010 0
 Audi R8 800 0 2024 0
 Opel Astra 120 60000 2012 0
 qwe qwe 123 123 1233 0
-Ferrari 458_italia 580 0 2012 0
-eqw qwe 333 333 333 0
-Ford Mondeo 180 260000 2008 0

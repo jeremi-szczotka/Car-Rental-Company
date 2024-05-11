@@ -18,10 +18,47 @@ void Car::loadFromFile(const std::string& filename) {
         std::cerr << "Unable to open file: " << filename << std::endl;
     }
 }
+void Car::delete_car(int k, const std::string& filename) {
+    std::ifstream file(filename);
+    if (!file.is_open()) {
+        std::cerr << "B³¹d: Nie mo¿na otworzyæ pliku: " << filename << std::endl;
+        return;
+    }
+    std::vector<std::string> lines;
+    std::string line;
+    int lineNumber = 1;
+    while (std::getline(file, line)) {
+        if (lineNumber != k) {
+            lines.push_back(line);
+        }
+        lineNumber++;
+    }
+
+    file.close();
+
+    std::ofstream outFile(filename);
+    if (!outFile.is_open()) {
+        std::cerr << "B³¹d: Nie mo¿na otworzyæ pliku do zapisu: " << filename << std::endl;
+        return;
+    }
+
+    for (const auto& l : lines) {
+        outFile << l << std::endl;
+    }
+
+    outFile.close();
+
+    std::cout << "Samochód zosta³ pomyœlnie usuniêty." << std::endl;
+}
+
+
+
 
 void Car::displayCars() {
+    int k = 1;
     for (const auto& car : cars) {
-        std::cout << "Producent: " << car.producent << ", Model: " << car.model << ", HP: " << car.hp << ", Milage: " << car.milage << ", Production Year: " << car.productionYear;
+        
+        std::cout <<k++<< ". Producent: " << car.producent << ", Model: " << car.model << ", HP: " << car.hp << ", Milage: " << car.milage << ", Production Year: " << car.productionYear;
         if (car.isRented) {
             std::cout << " Car is rented" << std::endl;
         }
@@ -50,7 +87,7 @@ void Car::addCar(const std::string& filename) {
     std::ofstream file(filename, std::ios::app);
     if (file.is_open()) {
         file << pr << " " << mo << " " << p << " " << m << " " << pY << " " << iR << std::endl;
-        cars.emplace_back(pr, mo, p, m,pY, true);
+        cars.emplace_back(pr, mo, p, m,pY, false);
         file.close();
     }
     else {

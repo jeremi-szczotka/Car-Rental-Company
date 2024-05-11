@@ -3,7 +3,7 @@
 
 #include "AuthenticationSystem.h"
 
-class Menu {
+class Menu : public Car {
 private:
     AuthenticationSystem system;
 
