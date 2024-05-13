@@ -46,9 +46,10 @@ void Car::delete_car(int k, const std::string& filename) {
         outFile << l << std::endl;
     }
 
-    outFile.close();
-
-    std::cout << "Samochód zosta³ pomyœlnie usuniêty." << std::endl;
+    outFile.close();    
+    auto it = cars.begin() + k-1;
+    cars.erase(it);
+    std::cout << "Car has been deleted" << std::endl;
 }
 
 

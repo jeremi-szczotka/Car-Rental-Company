@@ -1,1 +1,2 @@
 C:\Users\jeren\OneDrive\Pulpit\Car Rental Company\CRC\x64\Debug\CRC.exe
+C:\Users\jeren\OneDrive\Pulpit\Repo\Car-Rental-Company\Car-Rental-Company\CRC\x64\Debug\CRC.exe

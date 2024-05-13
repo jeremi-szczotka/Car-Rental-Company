@@ -30,7 +30,7 @@ void Menu::loginAsAdmin() {
                 std::cin >> c;
                 if (std::cin.fail()) {
                     std::cin.clear();
-                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Ignorowanie reszty wiersza
+                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
                     std::cout << "Invalid input, try again:" << std::endl;
                     std::cout << " " << std::endl;
                     c = 0;
@@ -54,7 +54,7 @@ void Menu::loginAsAdmin() {
                 std::cin >> k;
                 c1.delete_car(k, "cars.txt");
                 c = 0;
-                cars.resize(0);
+                
                 break;
             case 4:
                 std::cout << "Vamos" << std::endl;
@@ -100,7 +100,7 @@ void Menu::loginAsUser() {
                 std::cin >> c;
                 if (std::cin.fail()) {
                     std::cin.clear();
-                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Ignorowanie reszty wiersza
+                    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); 
                     std::cout << "Invalid input, try again:" << std::endl;
                     std::cout << " " << std::endl;
                     c = 0;
@@ -148,7 +148,7 @@ void Menu::display() {
             std::cin >> choice;
             if (std::cin.fail()) {
                 std::cin.clear();
-                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Ignorowanie reszty wiersza
+                std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
                 std::cout << "Invalid input, try again:" << std::endl;
                 std::cout << " " << std::endl;
                 choice = 0;
