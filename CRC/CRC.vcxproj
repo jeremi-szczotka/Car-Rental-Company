@@ -131,12 +131,14 @@
     <ClCompile Include="Car.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Rent.cpp" />
     <ClCompile Include="User.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AuthenticationSystem.h" />
     <ClInclude Include="Car.h" />
     <ClInclude Include="Menu.h" />
+    <ClInclude Include="Rent.h" />
     <ClInclude Include="User.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

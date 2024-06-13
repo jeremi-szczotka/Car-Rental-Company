@@ -1,9 +1,7 @@
-
 #pragma once
-
 #include "AuthenticationSystem.h"
 
-class Menu : public Car {
+class Menu : public Car , Rent{
 private:
     AuthenticationSystem system;
 
