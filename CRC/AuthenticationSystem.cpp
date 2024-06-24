@@ -1,10 +1,11 @@
 #include "AuthenticationSystem.h"
 
-AuthenticationSystem::~AuthenticationSystem(){
-        for (User* user : users) {
-            delete user;
-        }
-        users.clear();
+AuthenticationSystem::~AuthenticationSystem()
+{
+    for (auto user : users)
+    {
+        delete user;
+    }
 }
 
 User* AuthenticationSystem::login(const std::string& username, const std::string& password) {

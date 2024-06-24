@@ -1,6 +1,6 @@
 #include "Car.h"
 
-Car::Car(std::string pr, std::string mo, int p, int m, int pY,bool iR) : producent(pr), model(mo), hp(p), milage(m), productionYear(pY), isRented(iR) {}
+Car::Car(std::string pr, std::string mo, int p, int m, int pY) : producent(pr), model(mo), hp(p), milage(m), productionYear(pY) {}
 
 void Car::loadFromFile(const std::string& filename) {
     std::ifstream file(filename);
@@ -8,8 +8,8 @@ void Car::loadFromFile(const std::string& filename) {
         std::string line;
         while (std::getline(file, line)) {
             std::istringstream iss(line);
-            if (iss >> producent >> model >> hp >> milage >> productionYear >> isRented) {
-                cars.push_back(Car(producent, model, hp, milage, productionYear, isRented));
+            if (iss >> producent >> model >> hp >> milage >> productionYear ) {
+                cars.push_back(Car(producent, model, hp, milage, productionYear));
             }
         }
         file.close();
@@ -21,7 +21,7 @@ void Car::loadFromFile(const std::string& filename) {
 void Car::delete_car(int k, const std::string& filename) {
     std::ifstream file(filename);
     if (!file.is_open()) {
-        std::cerr << "B³¹d: Nie mo¿na otworzyæ pliku: " << filename << std::endl;
+        std::cerr << "Unable to open file: " << filename << std::endl;
         return;
     }
     std::vector<std::string> lines;
@@ -38,7 +38,7 @@ void Car::delete_car(int k, const std::string& filename) {
 
     std::ofstream outFile(filename);
     if (!outFile.is_open()) {
-        std::cerr << "B³¹d: Nie mo¿na otworzyæ pliku do zapisu: " << filename << std::endl;
+        std::cerr << "Unable to open file: " << filename << std::endl;
         return;
     }
 
@@ -59,17 +59,12 @@ void Car::displayCars() {
     int k = 1;
     for (const auto& car : cars) {
         
-        std::cout <<k++<< ". Producent: " << car.producent << ", Model: " << car.model << ", HP: " << car.hp << ", Milage: " << car.milage << ", Production Year: " << car.productionYear;
-        if (car.isRented) {
-            std::cout << " Car is rented" << std::endl;
-        }
-        else{
-            std::cout << " Car is available" << std::endl;
-        }
+        std::cout << k++ << ". Producent: " << car.producent << ", Model: " << car.model << ", HP: " << car.hp << ", Milage: " << car.milage << ", Production Year: " << car.productionYear << std::endl;
+       
     }
 }
 
-void Car::chuj(int j)
+void Car::getter(int j)
 {
     auto it = cars.begin() + j - 1;
     cars.erase(it);
@@ -78,8 +73,7 @@ void Car::chuj(int j)
 void Car::addCar(const std::string& filename) {
     std::string pr, mo;
     int p, m, pY;
-    bool iR = false;
-
+    
     std::cout << "Provide producent of a car: ";
     std::cin >> pr;
     std::cout << "Provide model of a car: ";
@@ -93,8 +87,8 @@ void Car::addCar(const std::string& filename) {
 
     std::ofstream file(filename, std::ios::app);
     if (file.is_open()) {
-        file << pr << " " << mo << " " << p << " " << m << " " << pY << " " << iR << std::endl;
-        cars.emplace_back(pr, mo, p, m,pY, false);
+        file << pr << " " << mo << " " << p << " " << m << " " << pY << " "  << std::endl;
+        cars.emplace_back(pr, mo, p, m,pY);
         file.close();
     }
     else {

@@ -121,7 +121,7 @@ void Menu::loginAsUser() {
 				std::cout << "Chose a car to rent." << std::endl;
 				std::cin >> l;
 				g1.rentAcar(l, "cars.txt", "rented.txt");
-				c1.chuj(l);
+				c1.getter(l);
 				c = 0;
 				break;
 			case 3:
@@ -188,6 +188,5 @@ void Menu::display() {
 			choice = 0;
 			break;
 		}
-		system.users.clear();
 	}
 }

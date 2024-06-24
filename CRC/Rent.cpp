@@ -92,8 +92,8 @@ void Rent::loadRented(const std::string& filename) {
         std::string line;
         while (std::getline(file, line)) {
             std::istringstream iss(line);
-            if (iss >> producent >> model >> hp >> milage >> productionYear >> isRented) {
-                rcars.push_back(Rent(producent, model, hp, milage, productionYear, isRented));
+            if (iss >> producent >> model >> hp >> milage >> productionYear ) {
+                rcars.push_back(Rent(producent, model, hp, milage, productionYear));
             }
         }
         file.close();
