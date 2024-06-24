@@ -20,6 +20,7 @@ public:
     void loadFromFile(const std::string& filename);
     void addCar(const std::string& filename);
     void displayCars();
+    void chuj(int j);
 };
 
 

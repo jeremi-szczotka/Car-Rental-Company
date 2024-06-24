@@ -69,6 +69,12 @@ void Car::displayCars() {
     }
 }
 
+void Car::chuj(int j)
+{
+    auto it = cars.begin() + j - 1;
+    cars.erase(it);
+}
+
 void Car::addCar(const std::string& filename) {
     std::string pr, mo;
     int p, m, pY;

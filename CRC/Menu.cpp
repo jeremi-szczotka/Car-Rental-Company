@@ -40,12 +40,12 @@ void Menu::loginAsAdmin() {
 			case 1:
 				c1.displayCars();
 				c = 0;
-				cars.resize(0);
+				Car::cars.resize(0);
 				break;
 			case 2:
 				c1.addCar("cars.txt");
 				c = 0;
-				cars.resize(0);
+				Car::cars.resize(0);
 				break;
 			case 3:
 				int k;
@@ -62,7 +62,7 @@ void Menu::loginAsAdmin() {
 				break;
 			default:
 				std::cout << "Invalid choice!" << std::endl;
-				x = false;
+				
 				c = 0;
 				break;
 			}
@@ -70,6 +70,7 @@ void Menu::loginAsAdmin() {
 	}
 	else {
 		std::cout << "Login failed. Invalid credentials or not an admin." << std::endl;
+		loginAsAdmin();
 	}
 }
 
@@ -86,6 +87,7 @@ void Menu::loginAsUser() {
 		std::cout << "Logged in as user: " << loggedInUser->getUsername() << std::endl;
 		Car c1;
 		Rent g1;
+		g1.loadRented("rented.txt");
 		c1.loadFromFile("cars.txt");
 		int c = 0;
 		bool x = true;
@@ -96,7 +98,8 @@ void Menu::loginAsUser() {
 				std::cout << "Choose your option:" << std::endl;
 				std::cout << "1. Car list." << std::endl;
 				std::cout << "2. Rent a car." << std::endl;
-				std::cout << "3. Quit" << std::endl;
+				std::cout << "3. Return a vehicle." << std::endl;
+				std::cout << "4. Quit" << std::endl;
 				std::cout << "--------------------------------" << std::endl;
 				std::cin >> c;
 				if (std::cin.fail()) {
@@ -112,16 +115,24 @@ void Menu::loginAsUser() {
 				c1.displayCars();
 				c = 0;
 				break;
-			case 2:
-				
+			case 2:				
 				int l;
 				c1.displayCars();
 				std::cout << "Chose a car to rent." << std::endl;
 				std::cin >> l;
 				g1.rentAcar(l, "cars.txt", "rented.txt");
-				x = false;
+				c1.chuj(l);
+				c = 0;
 				break;
 			case 3:
+				int o;
+				g1.displayRented("rented.txt");
+				std::cout << "Chose a car to rent." << std::endl;
+				std::cin >> o;
+				g1.returnCar(o,"cars.txt", "rented.txt");
+				c = 0;
+				break;
+			case 4:
 				std::cout << "Vamos" << std::endl;
 				x = false;
 				break;
@@ -133,6 +144,7 @@ void Menu::loginAsUser() {
 	}
 	else {
 		std::cout << "Login failed. Invalid credentials or not a user." << std::endl;
+		loginAsUser();
 	}
 }
 
