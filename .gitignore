@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+CRC/CRC/
+CRC/x64/
+**/.vs/**
+*.sln
+*.vcxproj
+*.filters
+*.user
+
