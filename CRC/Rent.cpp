@@ -68,6 +68,11 @@ void Rent::returnCar(int o, const std::string& filename, const std::string& rent
             }
         }
         lineNumber++;
+    
+    }
+    if (o<1 || o>rcars.size()) {
+        std::cerr << "Error. Wrong number pls try again\n";
+        return;
     }
     auto it = rcars.begin() + o - 1;
     rcars.erase(it);
@@ -102,12 +107,22 @@ void Rent::loadRented(const std::string& filename) {
         std::cerr << "Unable to open file: " << filename << std::endl;
     }
 }
-void Rent::displayRented(const std::string& filename)
+bool Rent::displayRented(const std::string& filename)
  {
-    int k = 1;
-    for (const auto& Rent : rcars) {
+    if (rcars.empty()) {
+        std::cout << "There is no rented car" << std::endl;
+        return false;
+    } else {
+        int k = 1;
+        for (const auto& Rent : rcars) {
 
-        std::cout << k++ << ". Producent: " << Rent.producent << ", Model: " << Rent.model << ", HP: " << Rent.hp << ", Milage: " << Rent.milage << ", Production Year: " << Rent.productionYear << std::endl;
-       
+            std::cout << k++ << ". Producent: " << Rent.producent << ", Model: " << Rent.model << ", HP: " << Rent.hp << ", Milage: " << Rent.milage << ", Production Year: " << Rent.productionYear << std::endl;
+
+        }
+        return true;
     }
+    
+}
+void Rent::rClear() {
+    rcars.clear();
 }

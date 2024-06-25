@@ -1,10 +1,8 @@
 #pragma once
-
 #include <iostream>
 #include <fstream>
 #include <sstream>
 #include <vector>
-
 class Car {
 public:
     std::string producent;

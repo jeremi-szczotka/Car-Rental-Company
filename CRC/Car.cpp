@@ -35,7 +35,10 @@ void Car::delete_car(int k, const std::string& filename) {
     }
 
     file.close();
-
+    if (k<1 || k>cars.size()) {
+        std::cerr << "Error. Wrong number pls try again\n";
+        return;
+    }
     std::ofstream outFile(filename);
     if (!outFile.is_open()) {
         std::cerr << "Unable to open file: " << filename << std::endl;

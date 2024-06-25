@@ -19,7 +19,6 @@ void Menu::loginAsAdmin() {
 		while (x) {
 			switch (c) {
 			case 0:
-
 				std::cout << "-------------------------------" << std::endl;
 				std::cout << "Choose your option:" << std::endl;
 				std::cout << "1. Car list." << std::endl;
@@ -87,7 +86,7 @@ void Menu::loginAsUser() {
 		std::cout << "Logged in as user: " << loggedInUser->getUsername() << std::endl;
 		Car c1;
 		Rent g1;
-		g1.loadRented("rented.txt");
+		
 		c1.loadFromFile("cars.txt");
 		int c = 0;
 		bool x = true;
@@ -120,16 +119,21 @@ void Menu::loginAsUser() {
 				c1.displayCars();
 				std::cout << "Chose a car to rent." << std::endl;
 				std::cin >> l;
-				g1.rentAcar(l, "cars.txt", "rented.txt");
+				
+				g1.rentAcar(l,"cars.txt","rented.txt");
 				c1.getter(l);
 				c = 0;
 				break;
 			case 3:
 				int o;
-				g1.displayRented("rented.txt");
-				std::cout << "Chose a car to rent." << std::endl;
-				std::cin >> o;
-				g1.returnCar(o,"cars.txt", "rented.txt");
+				g1.loadRented("rented.txt");
+				if (g1.displayRented("rented.txt")) {
+					std::cout << "Chose a car to rent." << std::endl;
+					std::cin >> o;
+					g1.returnCar(o, "cars.txt", "rented.txt");
+					g1.rClear();
+					
+				}
 				c = 0;
 				break;
 			case 4:

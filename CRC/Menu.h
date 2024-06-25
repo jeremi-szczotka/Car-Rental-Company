@@ -1,7 +1,7 @@
 #pragma once
 #include "AuthenticationSystem.h"
 
-class Menu : public Car , Rent{
+class Menu : public Car  {
 private:
     AuthenticationSystem system;
     void loginAsAdmin();

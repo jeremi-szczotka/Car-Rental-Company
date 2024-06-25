@@ -1,5 +1,5 @@
 #include "User.h"
-
+#include "AuthenticationSystem.h"
 User::User(const std::string& _username, const std::string& _password) : username(_username), password(_password) {}
 
 bool User::authenticate(const std::string& _username, const std::string& _password) const {
@@ -15,9 +15,6 @@ AdminUser::AdminUser(const std::string& _username, const std::string& _password)
 bool AdminUser::authenticate(const std::string& _username, const std::string& _password) const {
 	return username == _username && password == _password;
 }
-//void User::saveToFile(std::ostream& os) const {
-//    os << username << " " << password << std::endl;
-//}
 
 User* User::loadFromFile(std::istream& is) {
 	std::string username, password;
